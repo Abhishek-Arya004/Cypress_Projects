@@ -1,0 +1,25 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Arya",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:report": "open mochawesome-report/mochawesome.html  ",
+    "cypress:run": "cypress run --spec \"cypress/e2e/SampleTests/mytestfie.cy.js\" --browser chrome",
+    "merge-reports": "mochawesome-merge cypress/reports/*.json > cypress/reports/report.json",
+    "generate-report": "merge mochawesome.json"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^15.9.0",
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.0",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}
