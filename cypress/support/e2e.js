@@ -16,3 +16,9 @@
 // Import commands.js using ES2015 syntax:
 import "./commands";
 import "cypress-mochawesome-reporter/register";
+// Hook to capture screenshots for passed tests
+afterEach(function () {
+  if (this.currentTest.state === "passed") {
+    cy.screenshot(this.currentTest.title, { capture: "runner" });
+  }
+});
