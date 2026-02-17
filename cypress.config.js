@@ -12,7 +12,7 @@ module.exports = defineConfig({
     reportDir: "cypress/reports",
     screenshotsFolder: "cypress/reports/screenshots",
     overwrite: true,
-    html: false,
+    html: ture,
     json: true,
   },
 
