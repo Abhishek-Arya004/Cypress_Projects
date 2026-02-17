@@ -10,8 +10,8 @@ module.exports = defineConfig({
   reporterOptions: {
     reportDir: "cypress/reports",
     screenshotsFolder: "cypress/reports/screenshots",
-    overwrite: false,
-    html: false,
+    overwrite: true,
+    html: true,
     json: true,
   },
 
