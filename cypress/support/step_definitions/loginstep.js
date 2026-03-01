@@ -21,5 +21,6 @@ Then(
     if (username === "Admin" && password === "admin123") {
       cy.contains("Dashboard").should("be.visible");
     } else cy.get("p").should("contain.text", "Invalid credentials");
+    console.log("Login test executed with username: " + username);
   },
 );
