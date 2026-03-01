@@ -9,8 +9,7 @@ module.exports = defineConfig({
   reporter: "cypress-mochawesome-reporter",
 
   reporterOptions: {
-    reportDir: "cypress/reports",
-    screenshotsFolder: "cypress/reports/screenshots",
+    reportDir: "cypress/mochawesome-report",
     overwrite: true,
     html: true,
     json: false,
@@ -21,8 +20,8 @@ module.exports = defineConfig({
     pageLoadTimeout: 250000,
     requestTimeout: 250000,
     responseTimeout: 250000,
-    video: true,
-    screenshotOnRunFailure: true,
+    video: false,
+    screenshotOnRunFailure: false,
 
     async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config);
