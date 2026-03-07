@@ -27,7 +27,7 @@ When("Hit the url withbody", () => {
     url: "https://reqres.in/api/register",
     body: {
       name: "morpheusABHISHEK",
-      job: "leader",
+      job: "storekeeper",
     },
     headers: {
       "x-api-key": "reqres_8a7cc96555d94f9e9b95518cec680a78",
